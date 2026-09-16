@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Support for the CryptoIntelligence app.">
+<title>CryptoIntelligence Support</title>
+<style>
+    :root {
+        color-scheme: light dark;
+        --background: #f6f8fa;
+        --surface: #ffffff;
+        --text: #17202a;
+        --secondary: #58636f;
+        --accent: #087f78;
+        --border: #d9e0e6;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background: #101518;
+            --surface: #182024;
+            --text: #edf3f5;
+            --secondary: #b0bec5;
+            --accent: #57c7bd;
+            --border: #334047;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+    main {
+        width: min(820px, calc(100% - 32px));
+        margin: 40px auto;
+        padding: clamp(24px, 5vw, 56px);
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 6vw, 3rem);
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+    }
+
+    h2 {
+        margin: 2.25rem 0 0.75rem;
+        padding-top: 0.5rem;
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    p,
+    ul {
+        margin: 0 0 1rem;
+    }
+
+    ul {
+        padding-left: 1.4rem;
+    }
+
+    li + li {
+        margin-top: 0.4rem;
+    }
+
+    a {
+        color: var(--accent);
+        text-underline-offset: 0.18em;
+    }
+
+    .support-email {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    footer {
+        margin-top: 3rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--border);
+        color: var(--secondary);
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            width: 100%;
+            margin: 0;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+</style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>CryptoIntelligence Support</h1>
+        <p>Need help with CryptoIntelligence? We're here to help.</p>
+    </header>
+
+    <section>
+        <h2>How We Can Help</h2>
+        <p>Contact support for:</p>
+        <ul>
+            <li>questions about using CryptoIntelligence;</li>
+            <li>subscription or Restore Purchases questions;</li>
+            <li>technical problems;</li>
+            <li>feedback or other support requests.</li>
+        </ul>
+        <p class="support-email">
+            <a href="mailto:cryptointelligence.support@gmail.com">cryptointelligence.support@gmail.com</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Subscriptions</h2>
+        <p>
+            Subscriptions and payments are processed through Apple's App Store. You can manage or
+            cancel your subscription through your Apple Account subscription settings.
+        </p>
+    </section>
+
+    <footer>
+        <a href="https://esfand11.github.io/privacy.html">Privacy Policy</a>
+    </footer>
+</main>
+</body>
+</html>
