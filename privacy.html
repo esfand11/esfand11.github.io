@@ -232,7 +232,9 @@
 
     <p>
 
-        In this policy, “we” means Esfandiar Esfandiari, the provider of CryptoIntelligence.
+        In this policy, “we,” “us,” or “our” means Esfandiar Esfandiari, the developer and
+
+        provider of CryptoIntelligence.
 
     </p>
 
@@ -269,9 +271,9 @@
 
     <p>
 
-        The current V1 app has no CryptoIntelligence-operated account or backend system and does not
+        CryptoIntelligence has no CryptoIntelligence-operated account or backend system and does not
 
-        configure CloudKit or iCloud synchronization. This does not mean that all information stays on
+        use CloudKit or iCloud synchronization. This does not mean that all information stays on
 
         your device: network-backed features send the limited request information described below.
 
@@ -310,7 +312,7 @@
 
         An asset symbol or provider identifier from a locally stored holding may be sent to retrieve its
 
-        current price. The current V1 request paths do not send portfolio quantities, cost basis, cash
+        current price. These requests do not send portfolio quantities, cost basis, cash
 
         balances, account labels, wallet or exchange labels, watchlist notes, personal theses, or
 
@@ -341,13 +343,15 @@
 
         These services receive the request information needed to respond, together with normal network
 
-        metadata. Some providers state that they process IP addresses, access or service-usage logs,
+        metadata such as your IP address and request/service-use information. Some providers state that
 
-        search or interaction data, and technical metadata for purposes such as service delivery,
+        they process access or service-usage logs, search or interaction data, and technical metadata for
 
-        security, rate limiting, analytics, personalization, or service improvement. Other providers do
+        purposes such as service delivery, security, rate limiting, analytics, personalization, or
 
-        not publish equally specific API information.
+        service improvement, according to their own practices. Other providers do not publish equally
+
+        specific information.
 
     </p>
 
@@ -355,7 +359,7 @@
 
         External services operate under their own privacy practices. CryptoIntelligence does not control
 
-        their server logs, retention, subprocessors, international processing, or responses to privacy
+        their server logs, retention, subprocessors, international processing, or response to privacy
 
         requests.
 
@@ -370,31 +374,35 @@
 
     <p>
 
-        CryptoIntelligence uses Apple’s StoreKit and App Store purchase system for subscriptions. Apple
+        CryptoIntelligence offers subscriptions that are purchased and managed through Apple’s App Store
 
-        processes subscription payments, and CryptoIntelligence does not receive your full credit- or
+        using StoreKit. Apple processes your payment information; CryptoIntelligence does not receive
 
-        debit-card details.
-
-    </p>
-
-    <p>
-
-        StoreKit provides the app with product information and verified transaction, introductory-offer
-
-        eligibility, and current-entitlement information needed to present purchases, restore access,
-
-        and determine subscription access.
+        your payment-card or banking information.
 
     </p>
 
     <p>
 
-        CryptoIntelligence uses this information in memory. It does not store a subscription Boolean,
+        The app uses StoreKit-provided product, subscription, and entitlement information — such as
 
-        transaction identifier, receipt, trial-start date, or persisted entitlement record in its local
+        which product you selected and whether your entitlement is current, expired, or revoked — as
 
-        data stores, and it does not send StoreKit information to a CryptoIntelligence-operated backend.
+        necessary to determine your access to paid features. CryptoIntelligence does not operate its own
+
+        subscription backend and does not persist a separate purchase-history database; Apple and
+
+        StoreKit remain the system of record for your subscription.
+
+    </p>
+
+    <p>
+
+        Restore Purchases uses Apple’s StoreKit synchronization mechanism to re-check your current
+
+        entitlements with Apple. Restoring does not create a separate CryptoIntelligence account or a
+
+        developer-operated purchase-history service.
 
     </p>
 
@@ -407,11 +415,11 @@
 
     <p>
 
-        The current V1 app does not include a CryptoIntelligence developer analytics SDK, third-party
+        CryptoIntelligence does not include a developer-operated analytics SDK, third-party
 
-        crash-reporting SDK, advertising SDK, attribution SDK, App Tracking Transparency request, IDFA
+        crash-reporting SDK, advertising SDK, attribution SDK, App Tracking Transparency request,
 
-        use, cross-app or cross-site tracking implementation, or data-broker integration. The app does
+        cross-app or cross-site tracking implementation, or data-broker integration. The app does
 
         not display advertising.
 
@@ -419,7 +427,7 @@
 
     <p>
 
-        These statements describe the current V1 implementation. Apple may separately receive App Store
+        These statements describe the current app. Apple may separately receive App Store
 
         or operating-system diagnostics according to your device settings and Apple’s policies. External
 
@@ -465,7 +473,7 @@
 
         CryptoIntelligence sends the limited request information described in Section 3 to external
 
-        services when necessary to provide a network-backed feature. The current V1 app has no
+        services when necessary to provide a network-backed feature. CryptoIntelligence has no
 
         CryptoIntelligence-operated user database, advertising integration, or data-broker integration.
 
@@ -477,9 +485,7 @@
 
         information as described in their policies. Purchase and entitlement information is exchanged
 
-        with Apple through StoreKit as needed to provide subscription purchase, verification, and
-
-        restoration services.
+        with Apple through StoreKit as needed to provide, verify, and restore the subscription service.
 
     </p>
 
@@ -506,7 +512,9 @@
 
         External-provider retention is controlled by each provider under its own policies.
 
-        CryptoIntelligence does not promise a particular provider retention period or remote deletion.
+        CryptoIntelligence does not know or promise a particular provider’s retention period or remote
+
+        deletion.
 
     </p>
 
@@ -523,19 +531,19 @@
 
         accounts, and watchlist items, through available app controls. Uninstalling the app normally
 
-        removes its local app container, subject to Apple’s backup and restore behavior.
+        removes its local application container, subject to Apple’s device backup and restore behavior.
 
     </p>
 
     <p>
 
-        The current V1 app has no CryptoIntelligence account or backend, so there is no
+        CryptoIntelligence has no account or backend, so there is no CryptoIntelligence account-deletion
 
-        CryptoIntelligence account-deletion flow. Uninstalling the app does not delete request
+        flow. Uninstalling the app does not delete information that an external provider may have
 
-        information that an external provider may previously have logged. Questions about a provider’s
+        independently logged from prior requests. Questions about a provider’s information should be
 
-        information should be directed through that provider’s privacy-request process.
+        directed through that provider’s own privacy-request process.
 
     </p>
 
@@ -591,7 +599,7 @@
 
 <section>
 
-    <h2>14. Changes to This Policy</h2>
+    <h2>14. Changes to This Privacy Policy</h2>
 
     <p>
 
@@ -610,7 +618,7 @@
 
 <section>
 
-    <h2>15. Contact Us</h2>
+    <h2>15. Contact</h2>
 
     <p>For privacy questions, contact:</p>
 
